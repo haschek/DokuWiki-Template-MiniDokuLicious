@@ -1,0 +1,362 @@
+/**
+ * MiniDokuLicious Template 0.9 - Stylesheet Layout
+ *
+ * @link    http://eye48.com/go/minidokulicious
+ * @author  Michael Haschke
+ * @license http://creativecommons.org/licenses/by-sa/3.0/
+ */
+
+@media screen, projection {
+
+/* -- Screenlayout ---------------------------------------------------------- */
+
+body
+{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-size:100.1%;
+    line-height:1.5;
+    color:__text_alt__;
+    background-color:__background_alt__;
+}
+
+div.sitewrapper, div.export
+{
+    color:__text__;
+    background-color:__background__;
+    margin:0 auto;
+    padding:2em;
+    width:60em; min-width:720px; max-width:90%;
+    font-size:0.9em;
+    position:relative;
+}
+
+div.export
+{
+    width:auto; min-width:inherit; max-width:inherit;
+}
+
+div.header h1
+{
+    margin:0 35% 0.25em 0.375em; padding:0;
+    font-size:2em;
+    font-weight:bold;
+    color:__text_alt__;
+}
+
+div.nav-main
+{
+    color:__text_alt__;
+    background-color:__background_alt__;
+    padding:0 0.5em;
+    overflow:visible;
+}
+
+div.nav-main ol
+{
+    float:left;
+    width:65%;
+    margin:0; padding:0.5em 5% 0.5em 0;
+    list-style-type:none;
+    overflow:hidden;
+}
+
+div.nav-main ol li
+{
+    float:left;
+    margin:0;
+    padding:0 0.25em;
+}
+
+div.nav-main ol li a
+{
+    display:block;
+    padding:0.3em 0.6em;
+    color:__text_alt__;
+    white-space:nowrap;
+}
+
+div.nav-main ol li a:link, div.nav-main ol li a:visited
+{
+    background-color:transparent;
+    text-decoration:none;
+}
+
+div.nav-main ol li a:focus, div.nav-main ol li a:hover, div.nav-main ol li a:active
+{
+    background-color:__background_neu__;
+    color:__text_neu__;
+    text-decoration:underline;
+}
+
+div.nav-main ol li.active a
+{
+    color:__text_dark__;
+    background-color:__backg_dark__;
+    font-weight:bold;
+}
+
+div.nav-main form.search
+{
+    margin:0 0 0 70%;
+    font-size:1em;
+    padding:0.5em 0; 
+}
+
+div.nav-main form.search div.no
+{
+    border:none;
+    background-color:__backg_dark__;
+    padding:0.3em; margin:0 0.25em 0 0;
+    display:block;
+    position:relative;
+    /*height:1.5em;*/
+}
+
+div.nav-main form.search label
+{
+    position:absolute; left:-5000em;
+}
+
+div.nav-main form.search div.no input.edit,
+div.nav-main form.search div.no input.button
+{
+    display:inline-block;
+    margin:0; padding:0.1em 0; border:none;
+    font-size:1em; line-height:1; vertical-align:middle;
+    font-family:sans-serif;
+}
+
+div.nav-main form.search div.no input.edit
+{
+    width:89%;
+    background-color:__background__; color:__text__;
+}
+
+div.nav-main form.search div.no input.button
+{
+    /* margin-left:90%; padding:0.1em 0 0.1em 9%; width:0px; */
+    width:0; padding-left:9%;
+    background:url(./images/button-search.png) no-repeat center __backg_dark__;
+    color:transparent;
+    /* height:1.3em; */
+}
+
+div.nav-main form.search div.no div#qsearch__out
+{
+    position:absolute;
+    left:0; right:0;
+    top:1.8em;
+    background-color:__backg_dark__; color:__text_dark__;
+    width:100%;
+}
+div.nav-main form.search div.no div#qsearch__out strong,
+div.nav-main form.search div.no div#qsearch__out ul
+{
+    font-size:0.9em;
+    display:block;
+    padding:0; margin:0.333em;
+}
+div.nav-main form.search div.no div#qsearch__out ul { margin-left:2em; }
+div.nav-main form.search div.no div#qsearch__out ul li { margin:0; padding:0; }
+
+div.nav-breadcrumb { margin:1em 0.777em; padding:0; font-size:0.9em;}
+div.nav-breadcrumb p { margin:0; padding:0; }
+
+div.content { padding:0; margin:0 0.777em 2em 0.777em; }
+
+div.footer
+{
+    font-size:0.9em;
+    color:__text_neu__;
+    background-color:__background_neu__;
+    padding:0.777em;
+    margin:0;
+    float:none; clear:both; 
+}
+
+div.footer p { padding:0; margin:0; }
+
+/* -- secedit Button & Forms ------------------------------------------------ */
+
+div.secedit form.button
+{
+	text-align:right;
+	margin:0;
+	padding:0;
+	height:0px;
+	overflow:visible;
+	position:relative;
+}
+div.secedit input.button
+{
+	font-size:0.6em;
+	background-color:__text__;
+	color:__background__;
+	border-style:none;
+	padding:0.2em 0.4em 0.1em 0.4em;
+	position:relative;
+	top:-2em;
+}
+
+div.secedit input.button:focus,
+div.secedit input.button:hover
+{
+	background-color:__text_alt__;
+	color:__background_alt__;
+	cursor:pointer;
+}
+
+/* -- Information- & tool panel --------------------------------------------- */
+
+div.sitesuffix
+{
+    border-style:solid none;
+    border-width:1px;
+    border-color:__border_light__;
+    margin:2em 0; padding:1.5em 0;
+    font-size:0.9em;
+}
+
+div.sitesuffix h2 { position:absolute; left:-5000em; }
+
+div.sitesuffix p, div.sitesuffix ul
+{
+    padding:0; margin:0.5em 0;
+}
+
+div.sitesuffix ul { list-style:none; }
+div.sitesuffix ul li { display:inline; padding:0; margin:0; }
+div.sitesuffix ul li:before { content:"\2192 \00A0"; }
+
+
+/* -- User bookmarks -------------------------------------------------------- */
+
+div.bookmarks { padding:0; margin:0 0.777em 2em 0.777em; }
+body.js div.bookmarks { padding:0; margin:0; }
+
+div.bookmarks ol.normal
+{
+    margin:0;
+    overflow:hidden;
+    font-size:0.9em;
+}
+body.js div.bookmarks ol.normal { position:absolute; left:-5000em; }
+
+div.bookmarks ol.normal li
+{
+    float:left;
+    margin:0 0.5em 0 1.6em;
+}
+
+div.bookmarks h1 { font-size:0.9em; font-weight:bold; }
+body.js div.bookmarks h1 { position:absolute; left:-5000em; }
+
+#backend div.bookmarks ol.dropdown {
+	position:fixed;
+	width:auto;
+	top:24px;
+	left:0;
+	margin:0;
+	font-size:0.9em;
+	padding:1em 1em 1em 3em;
+	background-color:__background__;
+	color:__text__;
+	border:solid 1px __border__;
+	max-height:70%;
+	overflow:auto;
+}
+
+#backend div.bookmarks ol.dropdown li span.bcsep { position:absolute; left:-5000em; }
+#backend div.bookmarks ol.dropdown li a.breadcrumbs { display:list-item; margin-left:1.5em; list-style:square;}
+
+
+/* -- Backend --------------------------------------------------------------- */
+
+#backend .sitewrapper {
+	margin-top:25px;
+}
+
+#backendrow {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:__text_alt__;
+	height:25px;
+	z-index:2;
+}
+
+#backend .backendbutton {
+	display:block;
+	height:16px;
+	width:16px;
+	position:fixed;
+	top:4px;
+	z-index:1000;
+	cursor:pointer;
+	overflow:hidden;
+}
+
+#backend #system_bookmarks { left:5px; background:url(./images/star.png); }
+
+#backend #page_diff span.backendbutton { right:220px; background:url(./images/page_diff.png); }
+#backend #page_link span.backendbutton { right:200px; background:url(./images/page_link.png); }
+
+#backend #page_edit span.backendbutton { right:160px; background:url(./images/page_edit.png); }
+
+#backend #page_subscribe span.backendbutton { right:120px; background:url(./images/link_add.png); }
+#backend #page_unsubscribe span.backendbutton { right:120px; background:url(./images/link_delete.png); }
+#backend #page_subscribens span.backendbutton { right:100px; background:url(./images/transmit_add.png); }
+#backend #page_unsubscribens span.backendbutton { right:100px; background:url(./images/transmit_delete.png); }
+
+#backend #system_profile span.backendbutton { right:60px; background:url(./images/user.png); }
+#backend #system_admin span.backendbutton { right:40px; background:url(./images/cog.png); }
+
+#backend #system_logout span.backendbutton { right:0px; background:url(./images/bullet_red.png); }
+
+
+/* -- ETC ------------------------------------------------------------------- */
+
+/* hidden but accessible */
+.onlyAural { position:absolute; left:-5000em; }
+hr.onlyAural { float:none; clear:both; }
+
+/* Round corners
+   Problems: * does not work on every browser
+             * it may look ugly on Firefox2
+   Just comment it our, if you do not want/need it.
+   */
+div.nav-main
+{
+    border-radius:0.5em;
+    -moz-border-radius:0.5em;
+    -webkit-border-radius:0.5em;
+}
+
+div.nav-main ol li a,
+div.nav-main form.search div.no
+{
+    border-radius:0.3em;
+    -moz-border-radius:0.3em;
+    -webkit-border-radius:0.3em;
+}
+
+div.nav-main form.search div.no input.edit
+{
+    border-radius:0.1em;
+    -moz-border-radius:0.1em;
+    -webkit-border-radius:0.1em;
+}
+
+div.footer, div#qsearch__out,
+div#toc__header, div#toc__inside,
+div.mediameta__header, div.mediameta__inside
+{
+    border-radius:0.333em;
+    -moz-border-radius:0.333em;
+    -webkit-border-radius:0.333em;
+}
+
+} /* media ... */

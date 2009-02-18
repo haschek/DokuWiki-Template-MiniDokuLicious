@@ -1,0 +1,71 @@
+/**
+ * MiniDokuLicious Template 0.9 - Stylesheet Sidebar/TOC
+ *
+ * @link    http://eye48.com/go/minidokulicious
+ * @author  Michael Haschke
+ * @license http://creativecommons.org/licenses/by-sa/3.0/
+ */
+
+@media screen, projection {
+
+/* -- TOC -------------------------------------------------------------- */
+
+div.toc, div.mediameta
+{
+    background:__background__;
+	border-style:none;
+	padding:0.555em 0;
+	margin:0.555em 0;
+	font-size:0.9em;
+	float: right;
+	width:30%;
+	margin:0;
+	padding:0 0 2.222em 2.222em;
+}
+
+div.toc div#toc__inside, div.mediameta div.mediameta__inside
+{
+	background-color:__background_neu__;
+	padding-bottom: 0.5em;
+    z-index:1;
+    position:relative;
+    padding-top:0.5em;
+    margin-top:-0.5em;
+}
+
+div.toc div#toc__header, div.mediameta div.mediameta__header
+{
+    font-size:1.111em; font-weight:bold;
+    padding:0.3em 0.6em;
+    background-color:__backg_dark__;
+    color:__text_dark__;
+    position:relative;
+    z-index:2;
+}
+
+div.mediameta div.mediameta__inside dl,
+div.toc div#toc__inside ul,
+div.toc div#toc__inside ol,
+div.toc div#toc__inside p
+{
+    margin-top:0;
+    margin-left:0.333em;
+    margin-right:0.333em;
+}
+
+div.toc div#toc__inside ul,
+div.toc div#toc__inside ol
+{
+    margin-left:2.111em;
+}
+
+div.toc div#toc__inside ul ul,
+div.toc div#toc__inside ol ol,
+div.toc div#toc__inside ul ol,
+div.toc div#toc__inside ol ul
+{
+    margin-left:1.6em;
+    margin-right:0;
+}
+
+} /* @media ... */

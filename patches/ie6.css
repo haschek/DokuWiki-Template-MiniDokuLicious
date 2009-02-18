@@ -1,0 +1,56 @@
+/* Patches for MS Internet Explorer 6
+   */
+
+@import url('ie7.css'); /* inherit IE7 patches */
+
+body
+{
+}
+
+/* -- min/max-width fixes --------------------------------------------------- */
+
+div.sitewrapper
+{
+    width: 60em; /* Fallback */
+    width: expression((document.documentElement && document.documentElement.clientHeight) ? ((document.documentElement.clientWidth < 720) ? "720px" : ((document.documentElement.clientWidth < (1067)) ? "90%" : "60em" )) : ((document.body.clientWidth < 720) ? "720px" : ((document.body.clientWidth < (1067)) ? "90%" : "60em" )));
+}
+
+
+/* -- Gimme a Layout -------------------------------------------------------- */
+
+div.nav-main,
+div.nav-main ol,
+form.search,
+form.search div.no,
+pre
+{
+    zoom:1;
+}
+
+
+/* -- Layout fixes ---------------------------------------------------------- */
+
+div.nav-main ol li.active a:link,
+div.nav-main ol li.active a:visited
+{ background-color:#ccc; }
+
+div.nav-main ol li a:link, div.nav-main ol li a:visited,
+div.nav-main ol li a:focus, div.nav-main ol li a:hover,
+div.nav-main ol li a:active
+{ color:#000; }
+
+div.nav-main form.search div.no input.button { width:9%; }
+
+/* upper backend row won't work in IE6 */
+#backendrow { display:none; }
+#backend .backendbutton { display:none; }
+#backend .sitewrapper { margin-top:0; }
+
+/* white space bug in IE */
+#sitesuffix ul li { white-space:normal; }
+
+
+
+/* -- Typography fixes ------------------------------------------------------ */
+
+div.code { width:60%; }

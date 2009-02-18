@@ -1,0 +1,17 @@
+/* Patches for MS Internet Explorer 7
+   */
+
+/* -- Layout fixes ---------------------------------------------------------- */
+
+form.search { zoom:1; }
+form.search * { display:none; }
+form.search div.no { position:relative; zoom:1; }
+form.search div#qsearch__out * { display:block; }
+form.search div#qsearch__out a { display:inline; }
+
+div.nav-main form.search div.no input.button { width:9%;  }
+
+/* -- Typography fixes ------------------------------------------------------ */
+
+tt, code, pre { font-family:monospace !important; font-size:1em; }
+
